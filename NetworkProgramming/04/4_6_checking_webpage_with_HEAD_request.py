@@ -24,6 +24,7 @@ def get_server_status_code(url):
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description='Example HEAD Request')
+	#url :Don't forget "http://"
 	parser.add_argument('--url',action="store",dest="url",default=DEFAULT_URL)
 	given_args = parser.parse_args()
 	url = given_args.url
