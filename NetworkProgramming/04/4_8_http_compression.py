@@ -18,8 +18,6 @@ class RequestHandler(BaseHTTPRequestHandler):
 	
 	def do_GET(self):
 		"""Handler for the GET requests"""
-		import pdb
-		pdb.set_trace()
 		self.send_response(200)
 		self.send_header('Content-type','text/html')
 		self.send_header('Content-Encoding','gzip')
