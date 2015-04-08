@@ -7,7 +7,7 @@ import telnetlib
 HOST = "localhost"
 
 def run_telnet_session():
-	usr = raw_input("Enter your remote account")
+	usr = raw_input("Enter your remote account:")
 	password = getpass.getpass()
 	
 	session = telnetlib.Telnet(HOST)
